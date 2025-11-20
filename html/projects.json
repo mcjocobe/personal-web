@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Smart Grid Analytics Platform",
+    "description": "Developed a real-time analytics platform for smart grid optimization, improving energy distribution efficiency by 25%.",
+    "technologies": ["Python", "React", "PostgreSQL", "AWS"]
+  },
+  {
+    "title": "Renewable Energy Forecasting",
+    "description": "Machine learning model for predicting solar and wind energy output with 95% accuracy for capacity planning.",
+    "technologies": ["Machine Learning", "TensorFlow", "Docker", "Kubernetes"]
+  },
+  {
+    "title": "Energy Management API",
+    "description": "RESTful API for building energy management systems, enabling real-time monitoring and control of energy consumption.",
+    "technologies": ["Node.js", "Express", "MongoDB", "GraphQL"]
+  }
+]

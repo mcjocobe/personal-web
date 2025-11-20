@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Software Engineering",
+    "description": "Full-stack development, API design, cloud architecture, and system optimization"
+  },
+  {
+    "title": "Energy Systems",
+    "description": "Renewable energy, grid integration, energy storage, and efficiency optimization"
+  },
+  {
+    "title": "Data Analytics",
+    "description": "Energy data analysis, predictive modeling, and performance optimization"
+  },
+  {
+    "title": "Project Management",
+    "description": "Cross-functional team leadership, agile methodologies, and stakeholder coordination"
+  }
+]

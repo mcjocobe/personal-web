@@ -1,0 +1,15 @@
+{
+  "name": "Jose Luis Colomer",
+  "title": "Software & Energy Engineer",
+  "subtitle": "Bridging the gap between sustainable energy and cutting-edge technology",
+  "email": "josecolomerbel@gmail.com",
+  "about": [
+    "I'm a passionate engineer specializing in the intersection of software development and energy systems. With expertise in both domains, I create innovative solutions that drive efficiency and sustainability in modern energy infrastructure.",
+    "My background combines deep technical knowledge in software engineering with practical experience in energy systems, allowing me to develop comprehensive solutions for complex challenges in the renewable energy sector."
+  ],
+  "social": [
+    {"name": "LinkedIn", "url": "https://linkedin.com/in/yourprofile"},
+    {"name": "GitHub", "url": "https://github.com/yourusername"},
+    {"name": "Email", "url": "mailto:josecolomerbel@gmail.com"}
+  ]
+}

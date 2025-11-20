@@ -1,0 +1,14 @@
+version: "3.9"
+
+services:
+  nginx:
+    image: nginx:latest
+    container_name: nginx_server
+    ports:
+      - "8081:80"          # Expose port 80 on host
+      - "444:443"        # Optional: enable SSL if you add certs
+    volumes:
+      - ./html:/usr/share/nginx/html:ro   # Your static site files
+      - ./nginx:/etc/nginx/:ro  # Optional custom config
+    restart: unless-stopped
+
