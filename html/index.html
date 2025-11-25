@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -263,6 +264,7 @@
                 opacity: 0;
                 transform: translateY(30px);
             }
+
             to {
                 opacity: 1;
                 transform: translateY(0);
@@ -296,6 +298,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <nav class="container">
@@ -323,15 +326,17 @@
                 <h2>About Me</h2>
                 <div class="about-content">
                     <div>
-                        <div style="width: 200px; height: 200px; background: linear-gradient(135deg, #3b82f6, #1d4ed8); border-radius: 50%; margin: 0 auto; display: flex; align-items: center; justify-content: center; color: white; font-size: 1.2rem;">
-                            Your Photo
+                        <div
+                            style="width: 200px; height: 200px; border-radius: 50%; margin: 0 auto; overflow: hidden; border: 4px solid white; box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);">
+                            <img src="assets/profile.jpeg" alt="Profile Photo"
+                                style="width: 110%; height: 110%; object-fit: cover;">
                         </div>
                     </div>
                     <div class="about-text" id="about-content">
                         <div class="loading">Loading profile...</div>
                     </div>
                 </div>
-                
+
                 <div class="skills-grid" id="skills-container">
                     <div class="loading">Loading skills...</div>
                 </div>
@@ -351,8 +356,10 @@
             <div class="container">
                 <h2>Contact</h2>
                 <div style="text-align: center;">
-                    <p style="font-size: 1.2rem; margin-bottom: 2rem; color: #64748b;">Let's connect and discuss opportunities</p>
-                    <a id="email-link" href="#" style="display: inline-block; padding: 15px 30px; background: #3b82f6; color: white; text-decoration: none; border-radius: 8px; font-size: 1.1rem; font-weight: 500; transition: all 0.3s ease;">
+                    <p style="font-size: 1.2rem; margin-bottom: 2rem; color: #64748b;">Let's connect and discuss
+                        opportunities</p>
+                    <a id="email-link" href="#"
+                        style="display: inline-block; padding: 15px 30px; background: #3b82f6; color: white; text-decoration: none; border-radius: 8px; font-size: 1.1rem; font-weight: 500; transition: all 0.3s ease;">
                         📧 Loading...
                     </a>
                 </div>
@@ -375,32 +382,32 @@
             try {
                 const response = await fetch('profile.json');
                 const data = await response.json();
-                
+
                 // Update page title and navigation
                 document.getElementById('page-title').textContent = `${data.name} - ${data.title}`;
                 document.getElementById('nav-name').textContent = data.name;
-                
+
                 // Update hero section
                 document.getElementById('hero-title').textContent = data.title;
                 document.getElementById('hero-subtitle').textContent = data.subtitle;
-                
+
                 // Update about section
-                document.getElementById('about-content').innerHTML = data.about.map(paragraph => 
+                document.getElementById('about-content').innerHTML = data.about.map(paragraph =>
                     `<p>${paragraph}</p>`
                 ).join('');
-                
+
                 // Update contact
                 document.getElementById('email-link').href = `mailto:${data.email}`;
                 document.getElementById('email-link').textContent = `📧 ${data.email}`;
-                
+
                 // Update social links
-                document.getElementById('social-links').innerHTML = data.social.map(link => 
+                document.getElementById('social-links').innerHTML = data.social.map(link =>
                     `<a href="${link.url}">${link.name}</a>`
                 ).join('');
-                
+
                 // Update copyright
                 document.getElementById('copyright').textContent = `© ${new Date().getFullYear()} ${data.name}. All rights reserved.`;
-                
+
             } catch (error) {
                 console.error('Error loading profile:', error);
             }
@@ -411,14 +418,14 @@
             try {
                 const response = await fetch('skills.json');
                 const data = await response.json();
-                
-                document.getElementById('skills-container').innerHTML = data.map(skill => 
+
+                document.getElementById('skills-container').innerHTML = data.map(skill =>
                     `<div class="skill-card">
                         <h3>${skill.title}</h3>
                         <p>${skill.description}</p>
                     </div>`
                 ).join('');
-                
+
             } catch (error) {
                 console.error('Error loading skills:', error);
             }
@@ -429,8 +436,8 @@
             try {
                 const response = await fetch('projects.json');
                 const data = await response.json();
-                
-                document.getElementById('projects-container').innerHTML = data.map(project => 
+
+                document.getElementById('projects-container').innerHTML = data.map(project =>
                     `<div class="project-card">
                         <div class="project-image">
                             ${project.title}
@@ -444,14 +451,14 @@
                         </div>
                     </div>`
                 ).join('');
-                
+
             } catch (error) {
                 console.error('Error loading projects:', error);
             }
         }
 
         // Initialize page
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             loadProfile();
             loadSkills();
             loadProjects();
@@ -472,16 +479,16 @@
         });
 
         // Email button hover effects
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             setTimeout(() => {
                 const emailButton = document.querySelector('a[href^="mailto:"]');
                 if (emailButton) {
-                    emailButton.addEventListener('mouseover', function() {
+                    emailButton.addEventListener('mouseover', function () {
                         this.style.background = '#2563eb';
                         this.style.transform = 'translateY(-2px)';
                         this.style.boxShadow = '0 10px 25px rgba(59, 130, 246, 0.3)';
                     });
-                    emailButton.addEventListener('mouseout', function() {
+                    emailButton.addEventListener('mouseout', function () {
                         this.style.background = '#3b82f6';
                         this.style.transform = 'translateY(0)';
                         this.style.boxShadow = 'none';
@@ -491,7 +498,7 @@
         });
 
         // Add scroll effect to header
-        window.addEventListener('scroll', function() {
+        window.addEventListener('scroll', function () {
             const header = document.querySelector('header');
             if (window.scrollY > 100) {
                 header.style.background = 'rgba(255, 255, 255, 0.99)';
@@ -503,4 +510,5 @@
         });
     </script>
 </body>
+
 </html>
