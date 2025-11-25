@@ -1,3 +1,7 @@
 ## Run development container
 
 run ```docker run -d -p 8080:80 -v ./html:/usr/share/nginx/html/ jose-personal-web```
+
+## Run tests
+
+run ```pytest tests```
