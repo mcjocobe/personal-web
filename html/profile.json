@@ -8,8 +8,17 @@
     "My background combines deep technical knowledge in software engineering with practical experience in energy systems, allowing me to develop comprehensive solutions for complex challenges in the renewable energy sector."
   ],
   "social": [
-    {"name": "LinkedIn", "url": "https://linkedin.com/in/yourprofile"},
-    {"name": "GitHub", "url": "https://github.com/yourusername"},
-    {"name": "Email", "url": "mailto:josecolomerbel@gmail.com"}
+    {
+      "name": "LinkedIn",
+      "url": "https://www.linkedin.com/in/jose-luis-colomer-bel/"
+    },
+    {
+      "name": "GitHub",
+      "url": "https://github.com/mcjocobe"
+    },
+    {
+      "name": "Email",
+      "url": "mailto:josecolomerbel@gmail.com"
+    }
   ]
 }
