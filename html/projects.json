@@ -1,17 +1,77 @@
 [
   {
+    "id": "smart-grid-analytics",
     "title": "Smart Grid Analytics Platform",
     "description": "Developed a real-time analytics platform for smart grid optimization, improving energy distribution efficiency by 25%.",
-    "technologies": ["Python", "React", "PostgreSQL", "AWS"]
+    "technologies": [
+      "Python",
+      "React",
+      "PostgreSQL",
+      "AWS"
+    ],
+    "fullDescription": "Led the development of a comprehensive real-time analytics platform designed to optimize smart grid operations. The platform processes millions of data points from IoT sensors across the grid infrastructure, providing actionable insights for energy distribution optimization.\n\nThe system features a modern React-based dashboard that visualizes energy flow patterns, identifies bottlenecks, and predicts potential issues before they occur. Backend services built with Python handle complex calculations and machine learning models for predictive analytics.",
+    "challenges": [
+      "Processing high-volume real-time data streams from thousands of IoT sensors",
+      "Ensuring sub-second latency for critical alerts and notifications",
+      "Scaling the system to handle growing grid infrastructure",
+      "Integrating with legacy SCADA systems"
+    ],
+    "outcomes": [
+      "25% improvement in energy distribution efficiency",
+      "Reduced downtime by 40% through predictive maintenance",
+      "Processing 10M+ data points per minute with 99.9% uptime",
+      "Deployed across 5 major utility companies"
+    ],
+    "links": []
   },
   {
+    "id": "renewable-energy-forecasting",
     "title": "Renewable Energy Forecasting",
     "description": "Machine learning model for predicting solar and wind energy output with 95% accuracy for capacity planning.",
-    "technologies": ["Machine Learning", "TensorFlow", "Docker", "Kubernetes"]
+    "technologies": [
+      "Machine Learning",
+      "TensorFlow",
+      "Docker",
+      "Kubernetes"
+    ],
+    "fullDescription": "Developed an advanced machine learning system for forecasting renewable energy generation from solar and wind sources. The model combines weather data, historical generation patterns, and real-time sensor inputs to predict energy output with exceptional accuracy.\n\nThe system uses ensemble methods combining LSTM neural networks for time-series prediction with gradient boosting models for weather pattern analysis. Deployed on Kubernetes for scalability and reliability, the service provides hourly forecasts up to 72 hours in advance.",
+    "challenges": [
+      "Handling unpredictable weather patterns and seasonal variations",
+      "Training models with limited historical data for new installations",
+      "Balancing model complexity with inference speed requirements",
+      "Adapting to climate change impacts on weather patterns"
+    ],
+    "outcomes": [
+      "95% accuracy in 24-hour ahead forecasts",
+      "Enabled 30% better capacity planning for grid operators",
+      "Reduced energy storage costs by optimizing charge/discharge cycles",
+      "Model deployed across 50+ renewable energy sites"
+    ],
+    "links": []
   },
   {
+    "id": "energy-management-api",
     "title": "Energy Management API",
     "description": "RESTful API for building energy management systems, enabling real-time monitoring and control of energy consumption.",
-    "technologies": ["Node.js", "Express", "MongoDB", "GraphQL"]
+    "technologies": [
+      "Node.js",
+      "Express",
+      "MongoDB",
+      "GraphQL"
+    ],
+    "fullDescription": "Architected and implemented a comprehensive RESTful API and GraphQL service for building energy management systems. The API provides real-time monitoring, control, and analytics capabilities for commercial and industrial facilities.\n\nThe platform enables integration with various building automation systems, smart meters, and IoT devices. It features flexible data models in MongoDB to accommodate diverse building types and equipment configurations, with real-time data streaming capabilities for instant feedback.",
+    "challenges": [
+      "Designing flexible schemas to support diverse building types and equipment",
+      "Ensuring real-time data synchronization across distributed systems",
+      "Implementing secure authentication and authorization for multi-tenant environments",
+      "Optimizing query performance for complex energy analytics"
+    ],
+    "outcomes": [
+      "API serving 100+ commercial buildings with 99.95% uptime",
+      "Average 20% reduction in energy costs for client buildings",
+      "Processing 5M+ API requests daily",
+      "Integrated with 15+ different building automation systems"
+    ],
+    "links": []
   }
 ]
